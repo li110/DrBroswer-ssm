@@ -1,0 +1,27 @@
+package org.springmvc.service;
+
+import org.springmvc.pojo.Department;
+import org.springmvc.pojo.ExamItem;
+import org.springmvc.pojo.ExamItemLocal;
+import org.springmvc.pojo.Hospital;
+
+import java.util.List;
+
+public interface HospitalService {
+
+    List<String> getApplyHospitalIdByHosid(String hosid);
+
+    String getHosNameByHosId(String hosid);
+
+    List<ExamItem> getExamItemByHosId(String hosid);
+
+    List<ExamItemLocal> getExamItemsLocalByHosId(String hosId);
+
+    List<Department> getDeptListByHosid(String hosid);
+
+    List<String> getAllHosId();
+
+    List<Hospital> getAll();
+
+    List<Department> getall();
+}

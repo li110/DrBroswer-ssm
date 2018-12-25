@@ -1,0 +1,7 @@
+package org.springmvc.service;
+
+import org.springmvc.pojo.AuthList;
+
+public interface AuthService {
+    AuthList getAuthByAuthCode(String authCode);
+}

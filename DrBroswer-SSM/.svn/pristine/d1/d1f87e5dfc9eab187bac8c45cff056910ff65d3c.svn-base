@@ -1,0 +1,17 @@
+package org.springmvc.dao;
+
+import org.springmvc.pojo.Clinic;
+
+public interface ClinicMapper {
+    int deleteByPrimaryKey(String idcard);
+
+    int insert(Clinic record);
+
+    int insertSelective(Clinic record);
+
+    Clinic selectByPrimaryKey(String idcard);
+
+    int updateByPrimaryKeySelective(Clinic record);
+
+    int updateByPrimaryKey(Clinic record);
+}

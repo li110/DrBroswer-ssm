@@ -1,0 +1,20 @@
+package org.springmvc.dao;
+
+import org.springmvc.pojo.AuthList;
+
+public interface AuthListMapper {
+    int deleteByPrimaryKey(String id);
+
+    int insert(AuthList record);
+
+    int insertSelective(AuthList record);
+
+    AuthList selectByPrimaryKey(AuthList id);
+
+    int updateByPrimaryKeySelective(AuthList record);
+
+    int updateByPrimaryKey(AuthList record);
+
+    AuthList selectByauthCode(String authCode);
+
+}

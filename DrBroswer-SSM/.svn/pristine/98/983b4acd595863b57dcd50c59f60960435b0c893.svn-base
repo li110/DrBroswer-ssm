@@ -1,0 +1,21 @@
+package org.springmvc.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springmvc.dao.AuthListMapper;
+import org.springmvc.pojo.AuthList;
+import org.springmvc.service.AuthService;
+
+import javax.annotation.Resource;
+
+@Service
+public class AuthServiceimpl implements AuthService {
+
+    @Autowired
+    private AuthListMapper authListMapper;
+
+    @Override
+    public AuthList getAuthByAuthCode(String authCode) {
+        return authListMapper.selectByAuthCodeKey(authCode);
+    }
+}

@@ -1,0 +1,49 @@
+<head>
+    <meta charset="utf-8">
+    <style>
+        .mf-background {
+            background: url("images/info_board/400072433_banner_meitu_1.jpg") no-repeat fixed center;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+    <script >
+        function open_register() {
+            BJUI.navtab({
+                id:'registerinfo',
+                url:'zlk_html/register_info_j.html',
+                title:'登记信息'
+            })
+        };
+        function open_report() {
+            BJUI.navtab({
+                id:'inner_search',
+                url:'zlk_html/report_search_j.html',
+                title:'本地'
+            })
+        };
+        function open_wait_write() {
+            BJUI.navtab({
+                id:'hadChecked',
+                url:'zlk_html/report_hadchecked_m.html',
+                title:'本地'
+            })
+        };
+    </script>
+</head>
+<body>
+    <div class="mf-background" >
+        <div class="register_" style="padding-left: 150px;">
+            <img src="images/info_board/main_board.png" style="height:800px;" usemap="#url_map">
+            <map name="url_map">
+                <area shape="rect" coords="433,40,610,195" alt="登记" onclick="open_register()" style="cursor: pointer;">
+                <area shape="rect" coords="222,620,399,774" alt="诊断" onclick="open_wait_write()" style="cursor: pointer;">
+                <area shape="rect" coords="643,622,817,774" alt="报告" onclick="open_report()" style="cursor: pointer;">
+            </map>
+        </div>
+    </div>
+</body>

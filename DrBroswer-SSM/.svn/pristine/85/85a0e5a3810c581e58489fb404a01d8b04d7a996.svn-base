@@ -1,0 +1,43 @@
+package org.springmvc.pojo;
+
+public class Hospital {
+    private String id;
+
+    private String hosname;
+
+    private String hoslevel;
+
+    private String remarks;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id == null ? null : id.trim();
+    }
+
+    public String getHosname() {
+        return hosname;
+    }
+
+    public void setHosname(String hosname) {
+        this.hosname = hosname == null ? null : hosname.trim();
+    }
+
+    public String getHoslevel() {
+        return hoslevel;
+    }
+
+    public void setHoslevel(String hoslevel) {
+        this.hoslevel = hoslevel == null ? null : hoslevel.trim();
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks == null ? null : remarks.trim();
+    }
+}

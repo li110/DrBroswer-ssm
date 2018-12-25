@@ -1,0 +1,69 @@
+package org.springmvc.pojo;
+
+public class AuthList {
+    private String id;
+
+    private String authName;
+
+    private String authCode;
+
+    private String remarks;
+
+    private String pre_menu;
+
+    private String url;
+
+    private String html_id;
+
+    public String getHtml_id(){
+      return  html_id;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getPreMenu() {
+        return pre_menu;
+    }
+
+    public void setPreMenu(String preMenu) {
+        this.pre_menu = preMenu;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getAuthName() {
+        return authName;
+    }
+
+    public void setAuthName(String authName) {
+        this.authName = authName;
+    }
+
+    public String getAuthCode() {
+        return authCode;
+    }
+
+    public void setAuthCode(String authCode) {
+        this.authCode = authCode;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
+}
